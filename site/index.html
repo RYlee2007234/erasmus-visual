@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarGo Rapid S.R.L.</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <header>
+        <h1>CarGo Rapid S.R.L.</h1>
+        <p>Servicii Profesionale de Transport</p>
+    </header>
+
+    <nav>
+        <a href="#servicii">Servicii</a>
+        <a href="#avantaje">Avantaje</a>
+        <a href="#awb">AWB</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="despre">
+        <h2>Bine ați venit!</h2>
+        <p>La CarGo Rapid S.R.L., suntem dedicați să oferim soluții rapide și eficiente pentru nevoile dumneavoastră de transport.</p>
+        <img src="" style="width: 100%; border-radius: 8px; margin-top: 15px;">
+    
+
+    </section>
+
+    <section id="servicii">
+        <h2>Serviciile noastre</h2>
+        <ul>
+            <li><strong>Transport Marfă:</strong> Intern și internațional, inclusiv marfă generală, fragilă sau periculoasă.</li>
+            <li><strong>Transport Personalizat:</strong> Soluții adaptate fiecărui client.</li>
+            <li><strong>Livrări Urgente:</strong> Servicii rapide pentru nevoile urgente.</li>
+            <li><strong>Transport Internațional:</strong> Colaborări europene pentru transport sigur și eficient.</li>
+        </ul>
+    </section>
+
+    <section id="avantaje">
+        <h2>De ce să alegeți CarGo Rapid S.R.L.?</h2>
+        <ul>
+            <li><strong>Punctualitate:</strong> Livrăm întotdeauna la timp.</li>
+            <li><strong>Siguranță:</strong> Marfa ajunge în condiții excelente.</li>
+            <li><strong>Flotă modernă:</strong> Vehicule bine întreținute și echipate.</li>
+            <li><strong>Profesionalism:</strong> Echipă cu experiență.</li>
+            <li><strong>Prețuri competitive:</strong> Soluții eficiente și accesibile.</li>
+        </ul>
+    </section>
+
+    <section id="awb">
+        <h2>Verificare AWB</h2>
+        <p>Introduceți codul AWB pentru a verifica statusul livrării:</p>
+        <input type="text" id="awbCode" placeholder="Ex: CRG123456" required>
+        <button onclick="verificaAWB()">Verifică</button>
+        <p id="awbStatus" style="margin-top: 10px; font-weight: bold;"></p>
+    </section>
+    
+    
+    <section id="contact">
+        <h2>Contactați-ne</h2>
+        <p>Pentru oferte personalizate, informații suplimentare sau pentru a solicita un transport, completați formularul de mai jos:</p>
+        <form action="confirmare.html" onsubmit="return redirectioneaza(event)">
+            <label for="nume">Nume:</label><br>
+            <input type="text" id="nume" name="nume" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="mesaj">Mesaj:</label><br>
+            <textarea id="mesaj" name="mesaj" rows="5" required></textarea><br><br>
+            <button type="submit">Trimite</button>
+        </form>
+        <p id="confirmare" style="color: green; margin-top: 10px;"></p>
+        <p><strong>Adresa:</strong> Strada Ion Mecu 49-45, Mangalia 905500, România</p>
+        <p><strong>Telefon:</strong> +40736079016</p>
+        <p><strong>Email:</strong> CarGoRapid@contact.ro</p>
+        
+    </section>
+    <div style="margin: 20px auto; max-width: 1000px;">
+        <iframe
+            src="https://www.google.com/maps?q=43.823246,28.574286&hl=ro&z=14&output=embed"
+            width="100%" height="300" style="border:0; border-radius: 8px;"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 CarGo Rapid S.R.L. - Transport rapid, sigur și eficient</p>
+    </footer>
+
+    
+</body>
+</html>

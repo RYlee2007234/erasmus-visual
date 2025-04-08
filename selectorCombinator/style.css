@@ -1,0 +1,73 @@
+/* Selectores combinadores*/
+/* Combinators */
+
+/* Descendant combinator */
+/* Combinadores descendientes */
+/* div p {----} Aplica los estilos a todos los hijos descendientes director e indirectos de div*/
+
+div {
+    background-color: aquamarine;
+}
+
+div p{
+    color: green;
+    font-size: 18px;
+}
+
+/* Child Combinator */
+/* Hijo directo */
+/* div > p{----} Aplica los estilos a todos os hijos directos de div */
+
+div > p{
+    background-color: lightcoral;
+}
+
+/* Next-sibling combinator */
+/* Elemento adyadcente */
+/* Aplica los estilor a los parrafos adyadcente de div */
+
+div + p{
+    background-color: black;
+    color: greenyellow;
+    padding: 5px;
+}
+
+/* Subsequent-sibling combinator */
+/* General de hermanos */
+/* Aplica los estilos a todos lor parrafos hermados de div */
+
+div ~ p{
+    font-size: 2em;
+    color: red;
+}
+
+/* agrupacion de selectores */
+/*
+h3 {
+    background-color: brown;
+    color: white;
+}
+
+h5 {
+    background-color: brown;
+    color: white;
+}
+
+.box {
+    padding: 5px;
+    background-color: brown;
+    color: white;
+}
+*/
+h3, h5, .box {
+    padding: 5px;
+    background-color: brown;
+    color: white;
+}
+
+
+
+
+
+
+
